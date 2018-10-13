@@ -18,6 +18,9 @@ githublink: "https://github.com/MvdSman/HCI/tree/gh-pages" # code repository
 #
 urlimg: "https://github.com/MvdSman/HCI/tree/gh-pages/images/"
 
+# Logo size is 600x80 pixels
+logo: "logo.png"
+
 # Gems
 gems:
     - jekyll-asciidoc
