@@ -5,7 +5,7 @@ timezone: Europe/Amsterdam
 title: "Project HCI"
 author: mark # see authors.yml
 site.description: "Popularizing scientific articles."
-url: "https://mvdsman.github.io/HCI"
+url: "https://mvdsman.github.io/"
 #disqus_shortname: "personal-r-projects"
 credits: '<p>Based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a> by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.</p>'
 githublink: "https://github.com/MvdSman/HCI/tree/gh-pages" # code repository
