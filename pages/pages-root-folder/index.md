@@ -10,7 +10,7 @@ header:
 widget1:
   title: "Blog & Portfolio"
   url: '/blog/'
-  text: 'This site was created to show some of the projects and small scripts I am working on and to keep myself on track by trying to analyse different kinds of datasets. This site will also double as my portfolio in the <a href="https://mvdsman.github.io/projects/">Project</a> section. More content will follow soon!'
+  text: 'This site was created to show some of the projects and small scripts I am working on and to keep myself on track by trying to analyse different kinds of datasets. This site will also double as my portfolio in the <a href="https://github.com/MvdSman/HCI/tree/gh-pages/projects/">Project</a> section. More content will follow soon!'
 widget2:
   title: "About me"
   url: '/about/'
