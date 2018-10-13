@@ -5,7 +5,7 @@ timezone: Europe/Amsterdam
 title: "Project HCI"
 author: mark # see authors.yml
 site.description: "Popularizing scientific articles."
-url: "https://mvdsman.github.io/HCI"
+url: "https://mvdsman.github.io/"
 #disqus_shortname: "personal-r-projects"
 credits: '<p>Based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a> by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.</p>'
 githublink: "https://github.com/MvdSman/HCI/tree/gh-pages" # code repository
@@ -16,7 +16,7 @@ githublink: "https://github.com/MvdSman/HCI/tree/gh-pages" # code repository
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: "https://github.com/MvdSman/HCI/tree/gh-pages/images"
+urlimg: "https://github.com/MvdSman/HCI/tree/gh-pages/images/"
 
 # Logo size is 600x80 pixels
 logo: "logo.png"

@@ -20,8 +20,8 @@ header:
     pattern:
     color:
     background-color: "#fabb00"   # You must use ""
-    title:
-    caption:
+    title: "Popularizing scientific articles"
+    caption: "A Human-Computer Interaction & InfoVisualization project."
     caption_url:
 image:
     title:

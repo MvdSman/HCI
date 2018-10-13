@@ -2,11 +2,11 @@
   url: "/"
   side: left
 
-- title: Blog
+- title: Articles
   url: "/blog/"
   side: left
   dropdown:
-  - title: "Blog Archive"
+  - title: "Article Archive"
     url: "/blog/archive/"
 
 - title: Projects
