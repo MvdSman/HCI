@@ -17,6 +17,7 @@ githublink: "https://github.com/MvdSman/HCI/tree/gh-pages" # code repository
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
 urlimg: "https://github.com/MvdSman/HCI/tree/gh-pages/images/"
+urldict: "https://www.dictionary.com/browse/"
 
 # Logo size is 600x80 pixels
 logo: "logo.png"
