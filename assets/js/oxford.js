@@ -38,8 +38,8 @@ public String dictionary(String word){
   }
   
   private String getRequest(String link){
-    final  String app_id="my_app_id"
-    final  String app_key="my_app_key"
+    final  String app_id="4018a1e2"
+    final  String app_key="33f017eb98a09457c65eb26868a0ea94"
     try{
       URL url=new  URL(link)
       HttpsURLConnection urlConnection=(HttpsURLConnection) url.openConnection();
