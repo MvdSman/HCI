@@ -1,3 +1,5 @@
+// https://codepen.io/aadhivive/pen/yNZXxj
+
 $(function() {
     smoothScroll(1000);
 });
