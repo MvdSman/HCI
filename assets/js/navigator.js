@@ -28,6 +28,7 @@ var topLink = $("a[href='#top']"),
     citationsLink = $("a[href='#citations']");
 
 $window.on("scroll",function(e){
+    topLink.css({'font-weight': 900, 'font-size': 'large'});
     if($window.scrollTop() < $("#abstract").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
