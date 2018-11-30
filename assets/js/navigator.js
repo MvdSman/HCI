@@ -32,7 +32,7 @@ $window.on("scroll",function(e){
     if($window.scrollTop() < $("#abstract").offsetTop) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollTop() >= $("#abstract").offsetTop.top && $window.scrollTop() < $("#introduction").offsetTop) {
+    } else if ($window.scrollTop() >= $("#abstract").offsetTop && $window.scrollTop() < $("#introduction").offsetTop) {
         $("#nav-wrap").find("a").css("font-weight",400);
         abstractLink.css({'font-weight': 900, 'font-size': 'large'});
     } else if ($window.scrollTop() >= $("#introduction").offsetTop && $window.scrollTop() < $("#methods").offsetTop) {
