@@ -187,12 +187,42 @@ img.lazy {
 
 /* Navigator style
 ------------------------------------------------------------------- */
-
+/*
 ul li a:hover, ul li a:focus {
   font-weight: bold;
 }
 
 .current {
   font-size: large;
+  font-weight: bold;
+}
+*/
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+#nav-wrap {
+  text-transform: uppercase;
+  margin: 0 auto;
+  position: fixed;
+  margin: 0 auto
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: #ec145a;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+nav a:hover {
   font-weight: bold;
 }
