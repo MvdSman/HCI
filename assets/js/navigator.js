@@ -29,13 +29,13 @@ var topLink = $("a[href='#top']"),
 
 $window.on("scroll",function(e){
     topLink.css({'font-weight': 900, 'font-size': 'large'});
-    if($window.scrollTop() < $("#abstract").offset().top) {
+    if($window.scrollTop() < $("#abstract").offsetTop) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollTop() >= $("#abstract").offset().top && $window.scrollTop() < $("#introduction").offset().top) {
+    } else if ($window.scrollTop() >= $("#abstract").offsetTop.top && $window.scrollTop() < $("#introduction").offsetTop) {
         $("#nav-wrap").find("a").css("font-weight",400);
         abstractLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollTop() >= $("#introduction").offset().top && $window.scrollTop() < $("#methods").offset().top) {
+    } else if ($window.scrollTop() >= $("#introduction").offsetTop && $window.scrollTop() < $("#methods").offsetTop) {
         $("#nav-wrap").find("a").css("font-weight",400);
         introductionLink.css({'font-weight': 900, 'font-size': 'large'});
     } else if ($window.scrollTop() >= $("#methods").offset().top && $window.scrollTop() < $("#results").offset().top) {
