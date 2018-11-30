@@ -24,7 +24,7 @@ var topLink = $("a[href='#top']"),
     introductionLink = $("a[href='#introduction']"),
     methodsLink = $("a[href='#methods']"),
     resultsLink = $("a[href='#results']"),
-    conclusionLink = $("a[href='#conclusion']"),
+    conclusionLink = $("a[href='#discussion--conclusion']"),
     citationsLink = $("a[href='#citations']");
 
 $window.on("scroll",function(e){
@@ -41,10 +41,10 @@ $window.on("scroll",function(e){
     } else if ($window.scrollTop() >= $("#methods").offset().top && $window.scrollTop() < $("#results").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         methodsLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollTop() >= $("#results").offset().top && $window.scrollTop() < $("#conclusion").offset().top) {
+    } else if ($window.scrollTop() >= $("#results").offset().top && $window.scrollTop() < $("#discussion--conclusion").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         resultsLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollTop() >= $("#conclusion").offset().top && $window.scrollTop() < $("#citations").offset().top) {
+    } else if ($window.scrollTop() >= $("#discussion--conclusion").offset().top && $window.scrollTop() < $("#citations").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         conclusionLink.css({'font-weight': 900, 'font-size': 'large'});
     } else if ($window.scrollTop() >= $("#citations").offset().top) {
