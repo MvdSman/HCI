@@ -184,3 +184,15 @@ img.lazy {
     text-align: center;
     color: $grey-5;
 }
+
+/* Navigator style
+------------------------------------------------------------------- */
+
+.page:hover {
+  font-weight: bold;
+}
+
+.current {
+  font-size: large;
+  font-weight: bold;
+}
