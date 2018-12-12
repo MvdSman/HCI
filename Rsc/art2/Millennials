@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="https://mvdsman.github.io//HCI//assets/css/styles_feeling_responsive.css">
+<style>
+  a {
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    color: #1B1D26;
+  }
+</style>
+<div class="panel" style="margin-bottom: 0px; border: 0px; padding: 0px;">
+ <h3>Millennial</h3>
+ <b>adjective</b>
+ <ol>
+  <li>of or relating to a millennium or the millennium</li>
+  <li>worthy or suggestive of the millennium</li>
+  <li>( often initial capital letter ) noting or relating to the generation born in the 1980s or 1990s, especially in the U.S.</li>
+ </ol>
+ <b>noun</b>
+ <ol>
+  <li>( often initial capital letter ) a person born in the 1980s or 1990s, especially in the U.S.; a member of Generation Y:</li>
+ </ol>
+</div>
