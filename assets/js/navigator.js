@@ -20,11 +20,13 @@ function smoothScroll (duration) {
     });
 }
 
-//var $window = $(document.getElementById("articleSection"));
+var $window = $(document.getElementById("articleSection"));
 
-//$window.on("scroll",function(e){
-function navScroll (div) {
+$window.on("scroll",function(){
+//function navScroll (div) {
     console.log("function at least called");
+    $topOffset = $(this).scrollTop();
+    console.log($topOffset);
 
     var topLink = $("a[href='#top']"),
         abstractLink = $("a[href='#abstract']"),
