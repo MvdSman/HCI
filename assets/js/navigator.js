@@ -29,7 +29,7 @@ $(window).on('scroll', function() {
 
 });
 
-$window.on("scroll",function(){
+$(window).on('scroll', function() {
 //function navScroll (div) {
     console.log("function at least called");
 
