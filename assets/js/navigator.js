@@ -23,6 +23,8 @@ function smoothScroll (duration) {
 
 //$window.on("scroll",function(e){
 function navScroll (div) {
+    console.log("function at least called");
+    
     var topLink = $("a[href='#top']"),
         abstractLink = $("a[href='#abstract']"),
         introductionLink = $("a[href='#introduction']"),
@@ -32,7 +34,6 @@ function navScroll (div) {
         citationsLink = $("a[href='#citations']");
     
     topLink.css({'font-weight': 900, 'font-size': 'large'});
-    console.log("function at least called");
     if(div.scrollHeight < document.getElementById("abstract").scrollHeight) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
