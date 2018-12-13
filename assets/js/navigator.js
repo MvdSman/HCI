@@ -29,36 +29,34 @@ var topLink = $("a[href='#top']"),
     citationsLink = $("a[href='#citations']");
 
 $window.on("scroll",function(e){
-    // document.body.scrollTop alone should do the job but that actually works only in case of Chrome.
-    // With IE and Firefox it also works sometimes (seemingly with very simple pages where you have
-    // only a <pre> or something like that) but I don't know when. This hack seems to work always.
-    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-
-    // Grodriguez's fix for scrollHeight:
-    // accounting for cases where html/body are set to height:100%
-    var scrollHeight = (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight;
-
     topLink.css({'font-weight': 900, 'font-size': 'large'});
-    if($window.scrollHeight() < $("#abstract").offsetTop) {
+    if($window.scrollHeight < $("#abstract").scrollHeight) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollHeight() >= $("#abstract").offsetTop && $window.scrollHeight() < $("#introduction").offsetTop) {
+        console.log("at top");
+    } else if ($window.scrollHeight >= $("#abstract").scrollHeight && $window.scrollHeight < $("#introduction").scrollHeight) {
         $("#nav-wrap").find("a").css("font-weight",400);
         abstractLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollHeight() >= $("#introduction").offsetTop && $window.scrollHeight() < $("#methods").offsetTop) {
+        console.log("at abstract");
+    } else if ($window.scrollHeight >= $("#introduction").scrollHeight && $window.scrollHeight < $("#methods").scrollHeight) {
         $("#nav-wrap").find("a").css("font-weight",400);
         introductionLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollHeight() >= $("#methods").offset().top && $window.scrollHeight() < $("#results").offset().top) {
+        console.log("at introduction");
+    } else if ($window.scrollHeight >= $("#methods").offset().top && $window.scrollHeight < $("#results").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         methodsLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollHeight() >= $("#results").offset().top && $window.scrollHeight() < $("#discussion--conclusion").offset().top) {
+        console.log("at methods");
+    } else if ($window.scrollHeight >= $("#results").offset().top && $window.scrollHeight < $("#discussion--conclusion").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         resultsLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollHeight() >= $("#discussion--conclusion").offset().top && $window.scrollHeight() < $("#citations").offset().top) {
+        console.log("at results");
+    } else if ($window.scrollHeight >= $("#discussion--conclusion").offset().top && $window.scrollHeight < $("#citations").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         conclusionLink.css({'font-weight': 900, 'font-size': 'large'});
-    } else if ($window.scrollHeight() >= $("#citations").offset().top) {
+        console.log("at conclusion");
+    } else if ($window.scrollHeight >= $("#citations").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         citationsLink.css({'font-weight': 900, 'font-size': 'large'});
+        console.log("at citations");
     }
 });  
