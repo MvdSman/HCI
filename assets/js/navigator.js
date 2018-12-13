@@ -19,23 +19,25 @@ function smoothScroll (duration) {
     });
 }
 
-var $window = $(document.getElementById("articleSection"));
-var topLink = $("a[href='#top']"),
-    abstractLink = $("a[href='#abstract']"),
-    introductionLink = $("a[href='#introduction']"),
-    methodsLink = $("a[href='#methods']"),
-    resultsLink = $("a[href='#results']"),
-    conclusionLink = $("a[href='#discussion--conclusion']"),
-    citationsLink = $("a[href='#citations']");
+//var $window = $(document.getElementById("articleSection"));
 
-$window.on("scroll",function(e){
+//$window.on("scroll",function(e){
+function navScroll (div) {
+    var topLink = $("a[href='#top']"),
+        abstractLink = $("a[href='#abstract']"),
+        introductionLink = $("a[href='#introduction']"),
+        methodsLink = $("a[href='#methods']"),
+        resultsLink = $("a[href='#results']"),
+        conclusionLink = $("a[href='#discussion--conclusion']"),
+        citationsLink = $("a[href='#citations']");
+    
     topLink.css({'font-weight': 900, 'font-size': 'large'});
     console.log("function at least called");
-    if($window.scrollHeight < $("#abstract").scrollHeight) {
+    if(div.scrollHeight < document.getElementById("abstract").scrollHeight) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at top");
-    } else if ($window.scrollHeight >= $("#abstract").offset().top && $window.scrollHeight < $("#introduction").offset().top) {
+    } else if (div.scrollHeight >= $("#abstract").offset().top && div.scrollHeight < $("#introduction").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         abstractLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at abstract");
