@@ -42,11 +42,11 @@ $(window).on('scroll', function() {
         citationsLink = $("a[href='#citations']");
     
     //topLink.css({'font-weight': 900, 'font-size': 'large'});
-    if($window.scrollHeight < document.getElementById("abstract").scrollHeight) {
+    if($window.scrollTop() < document.getElementById("abstract").scrollHeight) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at top");
-    } else if ($window.scrollHeight >= $("#abstract").offset().top && $window.scrollHeight < $("#introduction").offset().top) {
+    } else if ($window.scrollTop() >= $("#abstract").offset().top && $window.scrollTop() < $("#introduction").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         abstractLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at abstract");
