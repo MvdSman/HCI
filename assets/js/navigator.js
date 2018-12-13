@@ -13,7 +13,7 @@ function smoothScroll (duration) {
         if( target.length ) {
             event.preventDefault();
             $('html, body').animate({
-                scrollTop: (target.top)
+                scrollTop: (target.offset().top)
             }, duration);
         }
     });
@@ -34,11 +34,11 @@ $window.on("scroll",function(e){
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at top");
-    } else if ($window.scrollHeight >= $("#abstract").scrollHeight && $window.scrollHeight < $("#introduction").scrollHeight) {
+    } else if ($window.scrollHeight >= $("#abstract").offset().top && $window.scrollHeight < $("#introduction").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         abstractLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at abstract");
-    } else if ($window.scrollHeight >= $("#introduction").scrollHeight && $window.scrollHeight < $("#methods").scrollHeight) {
+    } else if ($window.scrollHeight >= $("#introduction").offset().top && $window.scrollHeight < $("#methods").offset().top) {
         $("#nav-wrap").find("a").css("font-weight",400);
         introductionLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at introduction");
