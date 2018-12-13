@@ -62,4 +62,4 @@ function navScroll (div) {
         citationsLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at citations");
     }
-});  
+};  
