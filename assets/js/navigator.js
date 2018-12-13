@@ -23,15 +23,10 @@ function smoothScroll (duration) {
 var $window = $(document.getElementById("articleSection"));
 
 $(window).on('scroll', function() {
+//function navScroll (div) {
     $topOffset = $(this).scrollTop();
  
     console.log($topOffset);
-
-});
-
-$(window).on('scroll', function() {
-//function navScroll (div) {
-    //console.log("function at least called");
 
     var topLink = $("a[href='#top']"),
         abstractLink = $("a[href='#abstract']"),
@@ -42,32 +37,32 @@ $(window).on('scroll', function() {
         citationsLink = $("a[href='#citations']");
     
     //topLink.css({'font-weight': 900, 'font-size': 'large'});
-    if($(this).scrollTop() < document.getElementById("abstract").scrollHeight) {
-        $("#nav-wrap").find("a").css("font-weight",400);
+    if($(this).scrollTop() < $("#abstract").offset().top) {
+        $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         topLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at top");
     } else if ($(this).scrollTop() >= $("#abstract").offset().top && $(this).scrollTop() < $("#introduction").offset().top) {
-        $("#nav-wrap").find("a").css("font-weight",400);
+        $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         abstractLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at abstract");
-    } else if ($window.scrollHeight >= $("#introduction").offset().top && $window.scrollHeight < $("#methods").offset().top) {
-        $("#nav-wrap").find("a").css("font-weight",400);
+    } else if ($(this).scrollTop() >= $("#introduction").offset().top && $(this).scrollTop() < $("#methods").offset().top) {
+        $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         introductionLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at introduction");
-    } else if ($window.scrollHeight >= $("#methods").offset().top && $window.scrollHeight < $("#results").offset().top) {
-        $("#nav-wrap").find("a").css("font-weight",400);
+    } else if ($(this).scrollTop() >= $("#methods").offset().top && $(this).scrollTop() < $("#results").offset().top) {
+        $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         methodsLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at methods");
-    } else if ($window.scrollHeight >= $("#results").offset().top && $window.scrollHeight < $("#discussion--conclusion").offset().top) {
-        $("#nav-wrap").find("a").css("font-weight",400);
+    } else if ($(this).scrollTop() >= $("#results").offset().top && $(this).scrollTop() < $("#discussion--conclusion").offset().top) {
+        $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         resultsLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at results");
-    } else if ($window.scrollHeight >= $("#discussion--conclusion").offset().top && $window.scrollHeight < $("#citations").offset().top) {
-        $("#nav-wrap").find("a").css("font-weight",400);
+    } else if ($(this).scrollTop() >= $("#discussion--conclusion").offset().top && $(this).scrollTop() < $("#citations").offset().top) {
+        $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         conclusionLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at conclusion");
-    } else if ($window.scrollHeight >= $("#citations").offset().top) {
-        $("#nav-wrap").find("a").css("font-weight",400);
+    } else if ($(this).scrollTop() >= $("#citations").offset().top) {
+        $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         citationsLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at citations");
     }
