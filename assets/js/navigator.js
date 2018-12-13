@@ -30,6 +30,7 @@ var topLink = $("a[href='#top']"),
 
 $window.on("scroll",function(e){
     topLink.css({'font-weight': 900, 'font-size': 'large'});
+    console.log("function at least called");
     if($window.scrollHeight < $("#abstract").scrollHeight) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
