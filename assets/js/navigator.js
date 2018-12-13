@@ -1,15 +1,5 @@
-// document.body.scrollTop alone should do the job but that actually works only in case of Chrome.
-// With IE and Firefox it also works sometimes (seemingly with very simple pages where you have
-// only a <pre> or something like that) but I don't know when. This hack seems to work always.
-var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-
-// Grodriguez's fix for scrollHeight:
-// accounting for cases where html/body are set to height:100%
-var scrollHeight = (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight;
-
-
-
 // https://codepen.io/aadhivive/pen/yNZXxj
+// https://stackoverflow.com/questions/9439725/javascript-how-to-detect-if-browser-window-is-scrolled-to-bottom
 
 $(function() {
     smoothScroll(500);
@@ -39,6 +29,15 @@ var topLink = $("a[href='#top']"),
     citationsLink = $("a[href='#citations']");
 
 $window.on("scroll",function(e){
+    // document.body.scrollTop alone should do the job but that actually works only in case of Chrome.
+    // With IE and Firefox it also works sometimes (seemingly with very simple pages where you have
+    // only a <pre> or something like that) but I don't know when. This hack seems to work always.
+    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+
+    // Grodriguez's fix for scrollHeight:
+    // accounting for cases where html/body are set to height:100%
+    var scrollHeight = (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight;
+
     topLink.css({'font-weight': 900, 'font-size': 'large'});
     if($window.scrollHeight() < $("#abstract").offsetTop) {
         $("#nav-wrap").find("a").css("font-weight",400);
