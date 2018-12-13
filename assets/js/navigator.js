@@ -31,7 +31,7 @@ $(window).on('scroll', function() {
 
 $(window).on('scroll', function() {
 //function navScroll (div) {
-    console.log("function at least called");
+    //console.log("function at least called");
 
     var topLink = $("a[href='#top']"),
         abstractLink = $("a[href='#abstract']"),
@@ -41,7 +41,7 @@ $(window).on('scroll', function() {
         conclusionLink = $("a[href='#discussion--conclusion']"),
         citationsLink = $("a[href='#citations']");
     
-    topLink.css({'font-weight': 900, 'font-size': 'large'});
+    //topLink.css({'font-weight': 900, 'font-size': 'large'});
     if($window.scrollHeight < document.getElementById("abstract").scrollHeight) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css({'font-weight': 900, 'font-size': 'large'});
