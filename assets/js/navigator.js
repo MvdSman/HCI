@@ -18,7 +18,7 @@ function smoothScroll (duration) {
     });
 }
 
-var $window = $(window);
+var $window = $(document.getElementById("articleSection"));
 var topLink = $("a[href='#top']"),
     abstractLink = $("a[href='#abstract']"),
     introductionLink = $("a[href='#introduction']"),
