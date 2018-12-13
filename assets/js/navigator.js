@@ -7,6 +7,7 @@ $(function() {
   
 // smoothScroll function is applied from the document ready function
 function smoothScroll (duration) {
+    console.log("smooth scroll called");
     $('a[href^="#"]').on('click', function(event) {
         var target = $( $(this).attr('href') );
 
@@ -24,7 +25,7 @@ function smoothScroll (duration) {
 //$window.on("scroll",function(e){
 function navScroll (div) {
     console.log("function at least called");
-    
+
     var topLink = $("a[href='#top']"),
         abstractLink = $("a[href='#abstract']"),
         introductionLink = $("a[href='#introduction']"),
