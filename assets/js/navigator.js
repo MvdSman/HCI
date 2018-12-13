@@ -7,11 +7,11 @@ $(function() {
   
 // smoothScroll function is applied from the document ready function
 function smoothScroll (duration) {
-    console.log("smooth scroll called");
     $('a[href^="#"]').on('click', function(event) {
         var target = $( $(this).attr('href') );
 
         if( target.length ) {
+            console.log("smooth scroll called");
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: (target.offset().top)
@@ -22,11 +22,16 @@ function smoothScroll (duration) {
 
 var $window = $(document.getElementById("articleSection"));
 
+$(window).on('scroll', function() {
+    $topOffset = $(this).scrollTop();
+ 
+    console.log($topOffset);
+
+});
+
 $window.on("scroll",function(){
 //function navScroll (div) {
     console.log("function at least called");
-    $topOffset = $(this).scrollTop();
-    console.log($topOffset);
 
     var topLink = $("a[href='#top']"),
         abstractLink = $("a[href='#abstract']"),
