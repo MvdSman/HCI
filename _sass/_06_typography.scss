@@ -69,8 +69,8 @@ article a:hover {
     border-bottom: 2px solid;
 }
 
-p a,
-article a #alink{
+// for normal links within article
+#alink{
     color: rgb(0, 68, 255);
 }
 
