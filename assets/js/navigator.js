@@ -22,6 +22,8 @@ function smoothScroll (duration) {
 
 var $window = $(document.getElementById("articleSection"));
 
+
+
 $(window).on('scroll', function() {
 //function navScroll (div) {
     $topOffset = $(this).scrollTop();

@@ -68,6 +68,12 @@ p a:hover,
 article a:hover {
     border-bottom: 2px solid;
 }
+
+p a,
+article a #alink{
+    color: rgb(0, 68, 255);
+}
+
 p a.button,
 .button,
 .button:hover {
