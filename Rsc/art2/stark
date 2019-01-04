@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="https://mvdsman.github.io//HCI//assets/css/styles_feeling_responsive.css">
+<style>
+  a {
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    color: #1B1D26;
+  }
+</style>
+<div class="panel" style="margin-bottom: 0px; border: 0px; padding: 0px;">
+ <h3>Stark</h3>
+ <b>adjective</b>
+ <ol>
+  <li>sheer, utter, downright, or complete:
+stark madness.</li>
+<li>harsh, grim, or desolate, as a view, place, etc.:
+a stark landscape.</li>
+<li>extremely simple or severe:
+a stark interior.</li>
+<li>bluntly or sternly plain; not softened or glamorized:
+the stark reality of the schedule's deadline.</li>
+<li>stiff or rigid in substance, muscles, etc.</li>
+<li>rigid in death.</li>
+<li>Archaic: strong; powerful; massive or robust..</li>
+ </ol>
+</div>
