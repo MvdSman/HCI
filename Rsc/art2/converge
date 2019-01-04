@@ -1,0 +1,16 @@
+<link rel="stylesheet" type="text/css" href="https://mvdsman.github.io//HCI//assets/css/styles_feeling_responsive.css">
+<style>
+  a {
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    color: #1B1D26;
+  }
+</style>
+<div class="panel" style="margin-bottom: 0px; border: 0px; padding: 0px;">
+ <h3>Converge</h3>
+ <b>verb</b>
+ <ol>
+  <li>to tend to meet in a point or line; incline toward each other, as lines that are not parallel.</li>
+  <li>to tend to a common result, conclusion, etc.</li>
+ </ol>
+</div>
