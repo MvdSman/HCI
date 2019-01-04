@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="https://mvdsman.github.io//HCI//assets/css/styles_feeling_responsive.css">
+<style>
+  a {
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    color: #1B1D26;
+  }
+</style>
+<div class="panel" style="margin-bottom: 0px; border: 0px; padding: 0px;">
+ <h3>Modest</h3>
+ <b>adjective</b>
+ <ol>
+  <li>having or showing a moderate or humble estimate of one's merits, importance, etc.; free from vanity, egotism, boastfulness, or great pretensions.
+free from ostentation or showy extravagance:
+a modest house.</li>
+<li>having or showing regard for the decencies of behavior, speech, dress, etc.; decent:
+a modest neckline on a dres</li>
+<li>limited or moderate in amount, extent, etc.:
+a modest increase in salary.</li>
+ </ol>
+</div>
