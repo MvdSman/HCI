@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="https://mvdsman.github.io//HCI//assets/css/styles_feeling_responsive.css">
+<style>
+  a {
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    color: #1B1D26;
+  }
+</style>
+<div class="panel" style="margin-bottom: 0px; border: 0px; padding: 0px;">
+ <h3>Reside</h3>
+ <b>verb</b>
+ <ol>
+  <li>to dwell permanently or for a considerable time:
+She resides at 15 Maple Street.</li>
+<li>(of things, qualities, etc.) to abide, lie, or be present habitually; exist or be inherent (usually followed by in).</li>
+<li>to rest or be vested, as powers, rights, etc. (usually followed by in).
+</li>
+ </ol>
+</div>
