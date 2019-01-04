@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="https://mvdsman.github.io//HCI//assets/css/styles_feeling_responsive.css">
+<style>
+  a {
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    color: #1B1D26;
+  }
+</style>
+<div class="panel" style="margin-bottom: 0px; border: 0px; padding: 0px;">
+ <h3>Outlier</h3>
+ <b>noun</b>
+ <ol>
+  <li>something that lies outside the main body or group that it is a part of, as a cow far from the rest of the herd, or a distant island belonging to a cluster of islands:
+The small factory was an outlier, and unproductive, so the corporation sold it off to private owners who were able to make it profitable.</li>
+<li>someone who stands apart from others of his or her group, as by differing behavior, beliefs, or religious practices:
+scientists who are outliers in their views on climate change.</li>
+<li>Statistics:
+an observation that is well outside of the expected range of values in a study or experiment, and which is often discarded from the data set:
+Experience with a variety of data-reduction problems has led to several strategies for dealing with outliers in data sets.
+a person whose abilities, achievements, etc., lie outside the range of statistical probability.</li>
+ </ol>
+</div>
