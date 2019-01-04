@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="https://mvdsman.github.io//HCI//assets/css/styles_feeling_responsive.css">
+<style>
+  a {
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    color: #1B1D26;
+  }
+</style>
+<div class="panel" style="margin-bottom: 0px; border: 0px; padding: 0px;">
+ <h3>Exhibit</h3>
+ <b>verb</b>
+ <ol>
+  <li>to offer or expose to view; present for inspection:
+to exhibit the latest models of cars.</li>
+<li>to manifest or display:
+to exhibit anger; to exhibit interest.</li>
+<li>to place on show:
+to exhibit paintings.</li>
+<li>to make manifest; explain.</li>
+ </ol>
+</div>
