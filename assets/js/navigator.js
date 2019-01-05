@@ -39,15 +39,15 @@ $(window).on('scroll', function() {
         citationsLink = $("a[href='#citations']");
     
     //topLink.css({'font-weight': 900, 'font-size': 'large'});
-    if($(this).scrollTop() < $("#abstract").offset().top) {
+    if($(this).scrollTop() < ($("#abstract").offset().top - 150)) {
         $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         topLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at top");
-    } else if ($(this).scrollTop() >= $("#abstract").offset().top && $(this).scrollTop() < $("#introduction").offset().top) {
+    } else if ($(this).scrollTop() >= ($("#abstract").offset().top - 150) && $(this).scrollTop() < ($("#introduction").offset().top - 150)) {
         $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         abstractLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at abstract");
-    } else if ($(this).scrollTop() >= $("#introduction").offset().top && $(this).scrollTop() < $("#methods").offset().top) {
+    } else if ($(this).scrollTop() >= ($("#introduction").offset().top - 150) && $(this).scrollTop() < ($("#methods").offset().top - 150)) {
         $("#nav-wrap").find("a").css({"font-weight": 400, "font-size": "medium"});
         introductionLink.css({'font-weight': 900, 'font-size': 'large'});
         console.log("at introduction");
