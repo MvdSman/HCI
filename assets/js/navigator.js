@@ -28,13 +28,13 @@ var topLink = $("a[href='#top']"),
     citationsLink = $("a[href='#citations']");
 
 $window.on("scroll",function(e){
-    if($window.scrollTop() < $("#abstract").offset().top) {
+    if($window.scrollTop() < ($("#abstract").offset().top - 150)) {
         $("#nav-wrap").find("a").css("font-weight",400);
         topLink.css("font-weight",900);
-    } else if ($window.scrollTop() >= $("#abstract").offset().top && $window.scrollTop() < $("#introduction").offset().top) {
+    } else if ($window.scrollTop() >= ($("#abstract").offset().top - 150) && $window.scrollTop() < ($("#introduction").offset().top - 150)) {
         $("#nav-wrap").find("a").css("font-weight",400);
         abstractLink.css("font-weight",900);
-    } else if ($window.scrollTop() >= $("#introduction").offset().top && $window.scrollTop() < $("#methods").offset().top) {
+    } else if ($window.scrollTop() >= ($("#introduction").offset().top - 150) && $window.scrollTop() < ($("#methods").offset().top - 150)) {
         $("#nav-wrap").find("a").css("font-weight",400);
         introductionLink.css("font-weight",900);
     } else if ($window.scrollTop() >= $("#methods").offset().top && $window.scrollTop() < $("#results").offset().top) {
