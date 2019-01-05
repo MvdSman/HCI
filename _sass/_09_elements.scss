@@ -12,6 +12,7 @@
 - Lazy Load XT
 - Frontpage Widget
 - Image wrapper
+- Navigator
 
 */
 
@@ -197,6 +198,10 @@ ul li a:hover, ul li a:focus {
   font-weight: bold;
 }
 
+section h2 {
+    padding-top: 3rem;
+    margin-top: .2rem;
+}
 /*
 
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
